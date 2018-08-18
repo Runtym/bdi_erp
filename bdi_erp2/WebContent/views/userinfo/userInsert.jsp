@@ -12,6 +12,10 @@
 				<td><input type="text" name="uiName"></td>
 			</tr>
 			<tr>
+				<th>이름</th>
+				<td><input type="date" name="uiBirth" required></td>
+			</tr>
+			<tr>
 				<th>아이디</th>
 				<td><input type="text" name="uiId"></td>
 			</tr>

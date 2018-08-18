@@ -6,9 +6,20 @@ import java.util.Map;
 public class test {
 
 	public static void main(String[] args) {
-		Map<String,String> map = new HashMap<String,String>();
-		map.put("uiName", "박경훈");
+		String s = new String("a");
 		
-		System.out.println(map.get("uiname"));
+		try {
+			Class c = Class.forName("java.lang.String");
+			s = (String) c.newInstance();
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (InstantiationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }
